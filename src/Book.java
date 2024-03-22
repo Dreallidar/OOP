@@ -29,12 +29,22 @@ public class Book { // Klases properties
     public int getReleaseYear() { // Cia mano geteriai
         return this.releaseYear;
     }
-    public Book(){ // Tuscias konstruktorius
 
-    } public Book(String title,int pages, int year){
+    public Book() { // Tuscias konstruktorius
+
+    }
+
+    public Book(String title, int pages, int year) { // Pilnas konstruktorius
         this.title = title;
         this.pages = pages;
         this.releaseYear = year;
 
+    }
+
+    @Override
+    public String toString() {
+        return this.title + " " +
+                this.pages + " " +
+                this.releaseYear;
     }
 }
