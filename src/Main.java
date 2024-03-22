@@ -45,6 +45,36 @@ public class Main {
 
         }
 
+        Plant blankPlant = new Plant();
+        Plant blankPlant2 = new Plant();
+        Plant fullPlant = new Plant("Marijuana","Canabis indica / sativa",true,"East Asia",1.25,true);
+        Plant fullPlant2 = new Plant("Psilocybe","Psilocybe semilanceata",true,"South America, is present in parts of most continents",0.15,true);
+        blankPlant.setLatinPlantName("Allium cepa");
+        blankPlant2.setLatinPlantName("Allium sativum");
+        blankPlant.setPlantOriginContinent("Central Asia");
+        blankPlant.setplantIsAnnual(false);
+        blankPlant.setPlantHeightMeters(0.45);
+        blankPlant.setPlantIsEdible(true);
+        blankPlant2.setPlantIsEdible(false);
+        blankPlant2.setPlantOriginContinent("Middle Asia");
+        blankPlant2.setPlantHeightMeters(0.45);
+        blankPlant2.setplantIsAnnual(true);
+        blankPlant.setPlantName("Onion");
+        blankPlant2.setPlantName("Garlic");
+
+        ArrayList<Plant> plants = new ArrayList<>();
+        plants.add(blankPlant2);
+        plants.add(blankPlant);
+        plants.add(fullPlant2);
+        plants.add(fullPlant);
+
+
+
+        for (Plant plant:plants){
+            System.out.println(plant);
+        }
+
+
 
 
 
