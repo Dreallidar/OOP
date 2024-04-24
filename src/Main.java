@@ -23,12 +23,6 @@ public class Main {
         Book pilna1 = new Book("Pipi Longstockings", 160, 1945);
         Book pilna2 = new Book("Harry Potter and the Philosophers Stone", 223, 1997);
         Book pilna3 = new Book("12 Rules for Life", 448, 2018);
-
-//        Book tuscia2 = new Book("",0,0);
-//        Book tuscia3 = new Book();
-//        tuscia.setTitle( "Pepe ilgakoine");
-
-
         ArrayList<Book> books = new ArrayList<>();
         books.add(tuscia1);
         books.add(tuscia2);
@@ -36,6 +30,12 @@ public class Main {
         books.add(pilna1);
         books.add(pilna2);
         books.add(pilna3);
+
+//        Book tuscia2 = new Book("",0,0);
+//        Book tuscia3 = new Book();
+//        tuscia.setTitle( "Pepe ilgakoine");
+
+
 
         for (int i = 0; i < books.size(); i++) {
             System.out.println(books.get(i).getTitle() + " " + books.get(i).getPages() + " " + books.get(i).getReleaseYear());
@@ -73,6 +73,8 @@ public class Main {
         for (Plant plant:plants){
             System.out.println(plant);
         }
+        ArrayList<Employee> employees = new ArrayList<>();
+        Employee Cletus = new Employee;
 
 
 
